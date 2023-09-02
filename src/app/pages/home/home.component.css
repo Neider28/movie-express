@@ -1,0 +1,12 @@
+.categories-container {
+  width: 100%;
+  height: auto;
+  padding-bottom: 100px;
+}
+
+.categories-container h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--fluorescent-blue);
+}

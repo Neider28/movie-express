@@ -1,0 +1,27 @@
+.movie-lists-by-category-container {
+  width: 100%;
+  height: auto;
+  padding-bottom: 50px;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.category-title {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--fluorescent-blue);
+}
+
+@media (min-width: 700px) {
+  .movie-lists-by-category-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .movie-lists-by-category-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

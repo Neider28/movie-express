@@ -1,0 +1,9 @@
+.movie-item-container {
+  width: 150px;
+  height: 225px;
+  cursor: pointer;
+}
+
+.movie-item-container img {
+  border-radius: 1rem;
+}

@@ -1,0 +1,10 @@
+<app-header></app-header>
+<app-search></app-search>
+<app-movie-list [title]="'Trending Movies'" [movieLists]="trendingMovies"></app-movie-list>
+<app-movie-list [title]="'Now Playing'" [movieLists]="nowPlayingMovies"></app-movie-list>
+<app-movie-list [title]="'Upcoming'" [movieLists]="upcomingMovies"></app-movie-list>
+<app-movie-list [title]="'Top Rated'" [movieLists]="topRatedMovies"></app-movie-list>
+<div class="categories-container">
+  <h2>Categories</h2>
+  <app-category-lists [categoryLists]="categoryLists"></app-category-lists>
+</div>

@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Outfit&family=Quicksand:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --eerie-black: #151515;
+  --purple-light-2: #EEEAF2;
+  --white: #FFFFFF;
+  --pacific-blue: #0EB1D2;
+  --opal: #8AB9B5;
+  --fulvous: #f7bf7f;
+  --fluorescent-blue: #34E4EA;
+
+  --green: #97CC04;
+  --yellow: #EEB902;
+  --orange: #F45D01;
+  --lightRed: #DD1C1A;
+  --darkBlue: #086788;
+  --purple: #340068;
+  --ruby: #D81159;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 62.5%;
+  background-color: var(--eerie-black);
+  border-top: 5px solid var(--fluorescent-blue);
+}

@@ -1,0 +1,5 @@
+<app-header></app-header>
+<h2 class="category-title">{{ title }}</h2>
+<div class="movie-lists-by-category-container">
+  <app-movie-category-item *ngFor="let movie of movieListsByCategory" [movie]="movie"></app-movie-category-item>
+</div>

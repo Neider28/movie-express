@@ -1,0 +1,10 @@
+.category-item {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border: 2px solid var(--fluorescent-blue);
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  color: var(--white);
+  cursor: pointer;
+}

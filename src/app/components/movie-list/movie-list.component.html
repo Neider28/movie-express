@@ -1,0 +1,6 @@
+<section class="movie-list-container">
+  <h2>{{ title }}</h2>
+  <div class="movie-list">
+    <app-movie-item *ngFor="let movie of movieLists" [movie]="movie"></app-movie-item>
+  </div>
+</section>

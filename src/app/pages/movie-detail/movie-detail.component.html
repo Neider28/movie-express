@@ -1,0 +1,85 @@
+<section class="movie-detail-container">
+  <div class="movie-poster">
+    <img [src]="'https://image.tmdb.org/t/p/w300' + movie.poster_path" [alt]="movie.title" width="100%" *ngIf="!isLoading">
+    <ngx-skeleton-loader
+    count="1"
+    [theme]="{
+      'border-radius': '1rem',
+      width: '100%',
+      height: '300px',
+      'marginBottom': '0px',
+      'background-color': '#eeeaf218',
+    }"
+    *ngIf="isLoading"
+    ></ngx-skeleton-loader>
+  </div>
+  <div class="movie-content">
+    <h2 *ngIf="!isLoading">{{ movie.title }}</h2>
+    <ngx-skeleton-loader
+    count="1"
+    [theme]="{
+      'border-radius': '1rem',
+      width: '100%',
+      height: '40px',
+      'marginBottom': '20px',
+      'background-color': '#eeeaf218',
+    }"
+    *ngIf="isLoading"
+    ></ngx-skeleton-loader>
+    <span *ngIf="!isLoading">
+      <img src="../../../assets/images/star.png" alt="Star" width="30px">
+      {{ movie.vote_average }}
+    </span>
+    <ngx-skeleton-loader
+    count="1"
+    [theme]="{
+      'border-radius': '1rem',
+      width: '100%',
+      height: '40px',
+      'marginTop': '0px',
+      'marginBottom': '0px',
+      'background-color': '#eeeaf218',
+    }"
+    *ngIf="isLoading"
+    ></ngx-skeleton-loader>
+    <p *ngIf="!isLoading">{{ movie.overview }}</p>
+    <ngx-skeleton-loader
+    count="1"
+    [theme]="{
+      'border-radius': '1rem',
+      width: '100%',
+      height: '100px',
+      'marginTop': '20px',
+      'marginBottom': '20px',
+      'background-color': '#eeeaf218',
+    }"
+    *ngIf="isLoading"
+    ></ngx-skeleton-loader>
+    <app-category-lists [categoryLists]="movie.genres" *ngIf="!isLoading"></app-category-lists>
+    <ngx-skeleton-loader
+    count="1"
+    [theme]="{
+      'border-radius': '1rem',
+      width: '100%',
+      height: '50px',
+      'marginTop': '0px',
+      'marginBottom': '0px',
+      'background-color': '#eeeaf218',
+    }"
+    *ngIf="isLoading"
+    ></ngx-skeleton-loader>
+  </div>
+</section>
+<app-movie-list [title]="'Similar'" [movieLists]="similar" *ngIf="!isLoading"></app-movie-list>
+<ngx-skeleton-loader
+  count="1"
+  [theme]="{
+    'border-radius': '1rem',
+    width: '100%',
+    height: '300px',
+    'marginTop': '0px',
+    'marginBottom': '50px',
+    'background-color': '#eeeaf218',
+  }"
+  *ngIf="isLoading"
+></ngx-skeleton-loader>

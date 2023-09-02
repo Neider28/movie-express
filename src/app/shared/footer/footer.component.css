@@ -1,0 +1,19 @@
+.footer-container {
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--white);
+  border-radius: 1rem;
+}
+
+.footer-logo {
+  cursor: pointer;
+}
+
+.footer-container p {
+  font-size: 1.1rem;
+  color: var(--eerie-black);
+}
