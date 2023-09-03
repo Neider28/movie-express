@@ -38,4 +38,8 @@ export class MovieService {
   getMoviesByCategory(id: string) {
     return this.http.get<any>(`https://api.themoviedb.org/3/discover/movie?with_genres=${id}&api_key=19ab9ff6748c8916dc40d578e2b88ea2`);
   }
+
+  getMoviesBySearch(query: string) {
+    return this.http.get<any>(`https://api.themoviedb.org/3/search/movie?query=${query}&api_key=19ab9ff6748c8916dc40d578e2b88ea2`);
+  }
 }

@@ -1,8 +1,12 @@
 <div class="search-container">
   <div class="search">
-    <input type="text" name="" id="" placeholder="Search movie">
+    <input type="text" [formControl]="searchInput" placeholder="Search movie">
     <span>
       <img src="../../../assets/svg/search.svg" alt="Search">
     </span>
+    <ul class="results-container" *ngIf="searchInput.value">
+      <li *ngFor="let result of searchResults" (click)="getMovieDetail(result.id)">{{ result.title }}</li>
+      <li *ngIf="searchResults.length === 0" id="not-found">Not found</li>
+    </ul>
   </div>
 </div>
